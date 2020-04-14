@@ -9,6 +9,7 @@
 from typing import List
 class Solution:
     prices=[7,1,5,3,6,4]
+
     def maxProfit(self, prices: List[int]) -> int:
         highest = profit = 0
         for price in reversed(prices):
