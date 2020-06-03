@@ -7,16 +7,21 @@ Output: 4
 Explanation: s can be split into "RL", "RRLL", "RL", "RL", each substring contains same number of 'L' and 'R'.
 """
 
-s="RLRRLLRLRL"
+s = "RLRRLLRLRL"
+
+
 class Solution:
     def balancedStringSplit(self, s: str) -> int:
-        total=counter=0
+        total = counter = 0
         for i in s:
-            if(i=='L'): counter+=1
-            if(i=='R'): counter-=1
-            if(counter==0): total+=1
+            if i == "L":
+                counter += 1
+            if i == "R":
+                counter -= 1
+            if counter == 0:
+                total += 1
         return total
 
 
-instance_of_solution=Solution()
+instance_of_solution = Solution()
 print(instance_of_solution.balancedStringSplit(s))

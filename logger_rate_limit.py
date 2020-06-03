@@ -1,5 +1,4 @@
 class Logger:
-
     def __init__(self):
         """
         Initialize your data structure here.
@@ -11,6 +10,7 @@ class Logger:
         If this method returns false, the message will not be printed.
         The timestamp is in seconds granularity.
         """
+
 
 # Your Logger object will be instantiated and called as such:
 # obj = Logger()

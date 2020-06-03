@@ -9,11 +9,15 @@ Output: true
 Explanation: The robot moves up once, and then down once. All moves have the same magnitude, so it ended up at the origin where it started. Therefore, we return true.
 """
 
-moves="UD"
+moves = "UD"
+
+
 class Solution:
     def judgeCircle(self, moves: str) -> bool:
-        return moves.count('L') == moves.count('R') and moves.count('U') == moves.count('D')
+        return moves.count("L") == moves.count("R") and moves.count("U") == moves.count(
+            "D"
+        )
 
 
-instanceof=Solution()
+instanceof = Solution()
 print(instanceof.judgeCircle(moves))

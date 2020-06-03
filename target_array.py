@@ -20,16 +20,17 @@ nums       index     target
 """
 from typing import List
 
-nums = [0,1,2,3,4]
-index = [0,1,2,2,1]
+nums = [0, 1, 2, 3, 4]
+index = [0, 1, 2, 2, 1]
+
 
 class Solution:
     def createTargetArray(self, nums: List[int], index: List[int]) -> List[int]:
-        target=[]
-        for i,j in zip(nums,index):
-            target.insert(j,i)
+        target = []
+        for i, j in zip(nums, index):
+            target.insert(j, i)
         return target
 
 
 instace_of_solution = Solution()
-print(instace_of_solution.createTargetArray(nums,index))
+print(instace_of_solution.createTargetArray(nums, index))

@@ -13,7 +13,9 @@ Therefore only 12 and 7896 contain an even number of digits.
 """
 from typing import List
 
-input=[12,345,2,6,7896]
+input = [12, 345, 2, 6, 7896]
+
+
 class Solution:
     def findNumbers(self, nums: List[int]) -> int:
         count = 0
@@ -24,6 +26,7 @@ class Solution:
 
     def findNumbersoneliner(self, nums: List[int]) -> int:
         return sum(len(str(n)) % 2 == 0 for n in nums)
+
 
 instance_of_solution = Solution()
 print(instance_of_solution.findNumbers(input))
