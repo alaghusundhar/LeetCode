@@ -15,6 +15,7 @@ class Solution(object):
             number = target - num
             if number not in map:
                 map[num] = i
+                print (map)
             else:
                 return [map[number], i]
 
