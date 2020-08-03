@@ -12,15 +12,21 @@ nums = [2,5,1,3,4,7]
 
 from typing import List
 class Solution:
+
     def shuffle(self, nums: List[int], n: int) -> List[int]:
+        """Solution One through Zip inbuilt function"""
         mylist=[]
         for indx,num in zip(nums[0:n],nums[n:]):
             mylist+=[indx,num]
         print(mylist)
 
+    def shuffleSolutionTwo(self, nums: List[int], n: int) -> List[int]:
+        """Solution Two through Desired Index Solution"""
+        getDesiredIdx= lambda i: i *2 if (i<n) else (i-n) * 2 +1
 
 
 
 ins=Solution()
-ins.shuffle(nums,3)
+ins.shuffleSolutionTwo(nums,3)
+#ins.shuffle(nums,3)
 
